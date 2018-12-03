@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Calculatrice super magique 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <div>
+          <ion-input type="text" text-right [(ngModel)] = "val">{{val}}</ion-input>
+      </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('7')">7</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('8')">8</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('9')">9</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('/')">/</button></ion-col>
+      <ion-col col-2><button ion-button color = "danger" (click) = "clearOne()"><ion-icon name="return-left"></ion-icon></button></ion-col>
+      <ion-col col-2><button ion-button color = "danger" (click) = "clearAll()"><ion-icon name="backspace"></ion-icon></button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('4')">4</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('5')">5</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('6')">6</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('*')"><ion-icon name="close"></ion-icon></button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('(')">(</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show(')')">)</button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('1')" >1</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('2')">2</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('3')">3</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('-')">-</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('')">x²</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('sqrt')">/</button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('0')">0</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('.')">.</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('%')">%</button></ion-col>
+      <ion-col col-2><button ion-button color = "dark" (click) = "show('+')"><ion-icon name="add"></ion-icon></button></ion-col>
+      <ion-col col-4><button ion-button color = "secondary" (click) = "operation()">=</button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
